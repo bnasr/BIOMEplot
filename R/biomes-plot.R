@@ -66,12 +66,14 @@ plot_biome <- function(poly = fun.poly.obj()$poly.DF,
                                                          0.9),
                        add.legend = FALSE, add.number = TRUE,
                        merge.deserts = FALSE,
+                       xlim = c(0, 4500), 
+                       ylim = c(30, -15)
                        mar.vec = c(5.1, 3.5, 3, 2.1),
                        cex.p = 1.2){
   par(mar = mar.vec,
       mgp = c(1.8, 0.6,0),
       cex = cex.p)
-  plot(0,0, type = 'n', xlim = c(0, 450), ylim = c(30, -15),
+  plot(0,0, type = 'n', xlim = xlim, ylim = ylim,
        xlab = "Mean annual precipitation (cm)",
        ylab = expression(paste('Mean annual temperature ', (~degree~C))))
   # MAKE POLYGONS
