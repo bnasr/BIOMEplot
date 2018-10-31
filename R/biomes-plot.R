@@ -67,7 +67,7 @@ plot_biome <- function(poly = fun.poly.obj()$poly.DF,
                        add.legend = FALSE, add.number = TRUE,
                        merge.deserts = FALSE,
                        xlim = c(0, 4500), 
-                       ylim = c(30, -15)
+                       ylim = c(30, -15),
                        mar.vec = c(5.1, 3.5, 3, 2.1),
                        cex.p = 1.2){
   par(mar = mar.vec,
