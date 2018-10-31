@@ -19,7 +19,7 @@ fun.poly.obj <- function(){
                            stringsAsFactors = FALSE)
   list.coord <- lapply(unique(biomes.data$biome),
                       function(biome.id,data)
-                       cbind(data$y[data$biome == biome.id] * 10,
+                       cbind(data$y[data$biome == biome.id] * 100,
                              data$x[data$biome == biome.id]),
                       data=biomes.data)
   names(list.coord) <- unique(biomes.data$biome)
