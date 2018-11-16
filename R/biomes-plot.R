@@ -2,7 +2,7 @@
 ##' 
 ##' The Biomes are the Whittaker' biomes modified by Ricklefs (2008) in function
 ##' of mean annual temperature (MAT) and mean annual precipitation (MAP)
-##' (MAT in degree Celsius and MAP in cm).
+##' (MAT in degree Celsius and MAP in mm).
 ##' 
 ##' @references R.H. Whittaker. 1975. Communities and Ecosystems. 2d ed. Macmillan New York.
 ##' 
@@ -74,7 +74,7 @@ plot_biome <- function(poly = fun.poly.obj()$poly.DF,
       mgp = c(1.8, 0.6,0),
       cex = cex.p)
   plot(0,0, type = 'n', xlim = xlim, ylim = ylim,
-       xlab = "Mean annual precipitation (cm)",
+       xlab = "Mean annual precipitation (mm)",
        ylab = expression(paste('Mean annual temperature ', (~degree~C))))
   # MAKE POLYGONS
   if(!merge.deserts){
