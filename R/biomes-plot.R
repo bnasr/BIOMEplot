@@ -86,7 +86,7 @@ plot_biome <- function(poly = fun.poly.obj()$poly.DF,
              fill =make.transparent(c("navajowhite3", "darkgoldenrod1",
                                       "sienna","darkolivegreen4",
                                       "darkseagreen3", "forestgreen",
-                                      "darkgreen","olivedrab","gray"),
+                                      "darkgreen","chartreuse3","gray"),
                                       0.9),
              bty = 'n')}
   if(add.number) {
